@@ -1,5 +1,5 @@
-﻿var list=new List<int>();
-int a,c=999999 ,n=0;
+
+int a,c=999999 ,n=0,s=0,w=0;
 a=Convert.ToInt32(Console.ReadLine());
 int[] b =new int [a];
 for (int i = 0; i < a; i++)
@@ -9,24 +9,23 @@ for (int i = 0; i < a; i++)
 for (int j = 0; j < a; j++){
 if( c>b[j]){
     c=b[j];
+    s=j;
 }
 if(n<b[j]){
     n=b[j];
+    w=j;
 
 }}
 
-//System.Console.WriteLine(c);
-//System.Console.WriteLine(n);
-for (int r = 0; r <= a; r++)
-{    if(b[r]==c){
-    System.Console.WriteLine();
- System.Console.WriteLine(b[r]);
-}//else if(b[r{
+//System.Console.WriteLine(s);
 
-//}
-   
-    
-}
+//System.Console.WriteLine(w);
+
+
+    for (int i = s; i <= w; i++)
+    {
+        System.Console.WriteLine(b[i]);
+    }
 
 
 
